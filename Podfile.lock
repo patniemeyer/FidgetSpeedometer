@@ -1,0 +1,21 @@
+PODS:
+  - Eureka (3.1.0)
+  - iCarousel (1.8.3)
+  - MSSimpleGauge (0.5)
+  - OpenCV (2.4.9)
+
+DEPENDENCIES:
+  - Eureka
+  - iCarousel (= 1.8.3)
+  - MSSimpleGauge
+  - OpenCV (= 2.4.9)
+
+SPEC CHECKSUMS:
+  Eureka: d6725c38d0dcdceaa331d1468f75e76315715ae0
+  iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
+  MSSimpleGauge: e5f7bf2561f1338055fcd321c5469b0d6c689d14
+  OpenCV: bb17904e55fc19b1f0f6c3e29bc04a7dd31eddb9
+
+PODFILE CHECKSUM: f6d2f7400fb6859c29033b58dc6d947b8d6a59ea
+
+COCOAPODS: 1.2.0

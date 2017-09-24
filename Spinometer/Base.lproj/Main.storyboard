@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina5_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Spinometer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ern-QD-GRn">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QGg-g7-Iut" userLabel="Image View overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="GNe-EK-kDI" userLabel="grid View overlay">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uIp-dM-jrN" userLabel="gauge container">
+                                <rect key="frame" x="56.666666666666657" y="561" width="300" height="150"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="300" id="Uix-VM-pdp"/>
+                                    <constraint firstAttribute="height" constant="150" id="xRw-rz-3Ja"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aub-a5-Gjs" userLabel="rate label">
+                                <rect key="frame" x="106.66666666666669" y="556" width="200" height="75"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="Zmv-9O-Mx0"/>
+                                    <constraint firstAttribute="height" constant="75" id="tZb-v2-TDM"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="QGg-g7-Iut" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="3Kn-Su-lSf"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="GNe-EK-kDI" secondAttribute="bottom" id="5Im-Ls-7qL"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="QGg-g7-Iut" secondAttribute="bottom" id="5wP-UF-hdD"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="aub-a5-Gjs" secondAttribute="bottom" constant="105" id="7I6-Y8-6Pi"/>
+                            <constraint firstItem="Ern-QD-GRn" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="8Lv-Kz-aSC"/>
+                            <constraint firstItem="GNe-EK-kDI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="9Qd-tf-tEG"/>
+                            <constraint firstAttribute="trailing" secondItem="QGg-g7-Iut" secondAttribute="trailing" id="B5Y-8L-YTz"/>
+                            <constraint firstItem="uIp-dM-jrN" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="LJk-Bu-EVq"/>
+                            <constraint firstAttribute="trailing" secondItem="GNe-EK-kDI" secondAttribute="trailing" id="N6Y-St-ucN"/>
+                            <constraint firstItem="aub-a5-Gjs" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Zf1-Ks-0PA"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="uIp-dM-jrN" secondAttribute="bottom" constant="25" id="fBJ-7g-ArD"/>
+                            <constraint firstItem="Ern-QD-GRn" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="jqe-zi-CVC"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="Ern-QD-GRn" secondAttribute="bottom" id="kzD-qi-pvZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Ern-QD-GRn" secondAttribute="trailing" id="lIM-Qg-PZQ"/>
+                            <constraint firstItem="GNe-EK-kDI" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="lw1-0Y-fB5"/>
+                            <constraint firstItem="QGg-g7-Iut" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="oZy-BA-WdQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="gaugeContainer" destination="uIp-dM-jrN" id="UrJ-sh-86H"/>
+                        <outlet property="gridViewOverlay" destination="GNe-EK-kDI" id="uTM-iK-0xd"/>
+                        <outlet property="imageView" destination="Ern-QD-GRn" id="x4u-82-UJB"/>
+                        <outlet property="imageViewOverlay" destination="QGg-g7-Iut" id="LdZ-kz-4Pg"/>
+                        <outlet property="label" destination="aub-a5-Gjs" id="UJA-iV-oer"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="31.884057971014496" y="39.945652173913047"/>
+        </scene>
+    </scenes>
+</document>
